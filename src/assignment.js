@@ -14,16 +14,11 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    totalNumber = 0;
   
-    arrayOfNumbers.forEach(number => {
-      totalNumber += number;
-    });
-  
-    return totalNumber;
+    return arrayOfNumbers.length;
 };
 
-assignment.sumOfNumbers = sumOfNumbers;
+// assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -66,16 +61,13 @@ function celsiusToFahrenheit(arrayOfNumbers) {
     arrayofTemp = [];
   
     arrayOfNumbers.forEach(temp => {
-      arrayofTemp.push(
-        Math.trunc(tempConverted(temp))
+      
+      temperature = (temp * (9/5)) + 32;
+      arrayofTemp.push(Math.trunc(temperature)
       );
     })
   
     return arrayofTemp;
-}
-function tempConverted(number){
-  temp = (number * (9/5)) + 32;
-  return temp;
 }
 
 assignment.celsiusToFahrenheit = celsiusToFahrenheit;
