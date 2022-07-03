@@ -30,7 +30,7 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    totalCount = [];
+    const totalCount = [];
   
     arrayOfNumbers.forEach(number => {
       if(number % 2 == 0){
@@ -58,7 +58,7 @@ assignment.countEvenNumbers = countEvenNumbers;
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    arrayofTemp = [];
+    const arrayofTemp = [];
   
     arrayOfNumbers.forEach(temp => {
       
